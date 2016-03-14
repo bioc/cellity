@@ -4,22 +4,35 @@ Title: Quality Control for Single-Cell RNA-seq Data
 Version: 0.99.2
 Date: 2016-02-22
 Author: Tomislav Illicic, Davis McCarthy
-Authors@R: c(person("Tomislav", "Illicic", role=c("aut", "cre"),
-        email="ti243@cam.ac.uk"), person("Davis", "McCarthy",
-        role=c("aut"), email="davis@ebi.ac.uk"))
+Authors@R: c(person("Tomislav", "Illicic", role=c("aut", "cre"), email="ti243@cam.ac.uk"), person("Davis", "McCarthy", role=c("aut"), email="davis@ebi.ac.uk"))
 Maintainer: Tomislav Ilicic <ti243@cam.ac.uk>
-Description: A support vector machine approach to identifying and
-        filtering low quality cells from single-cell RNA-seq datasets.
+Description: A support vector machine approach to identifying and filtering low
+    quality cells from single-cell RNA-seq datasets.
 License: GPL (>= 2)
-Depends: R (>= 3.3)
-Imports: AnnotationDbi, e1071, ggplot2, graphics, grDevices, grid,
-        mvoutlier, org.Hs.eg.db, org.Mm.eg.db, robustbase, stats,
-        topGO, utils
-Suggests: BiocStyle, caret, knitr, testthat, rmarkdown
+Depends:
+    R (>= 3.3)
+Imports:
+    AnnotationDbi,
+    e1071,
+    ggplot2,
+    graphics,
+    grDevices,
+    grid,
+    mvoutlier,
+    org.Hs.eg.db,
+    org.Mm.eg.db,
+    robustbase,
+    stats,
+    topGO,
+    utils
+Suggests:
+    BiocStyle,
+    caret,
+    knitr,
+    testthat,
+    rmarkdown
 VignetteBuilder: knitr
 LazyData: true
-biocViews: RNASeq, QualityControl, Preprocessing, Normalization,
-        Visualization, DimensionReduction, Transcriptomics,
-        GeneExpression, Sequencing, Software, SupportVectorMachine
+biocViews: RNASeq, QualityControl, Preprocessing, Normalization, Visualization,
+    DimensionReduction, Transcriptomics, GeneExpression, Sequencing, Software, SupportVectorMachine
 RoxygenNote: 5.0.1
-NeedsCompilation: no
