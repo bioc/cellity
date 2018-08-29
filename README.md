@@ -26,8 +26,9 @@ The `cellity` package has been accepted by
 
 ```
 ## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite("cellity")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("cellity")
 ```
 Please bear in mind, that there is no release version of `cellity` yet and you will therefore need to use the R development verison 3.3 ('http://r.research.att.com/mavericks/R-devel/R-devel-mavericks-signed.pkg').  
 
@@ -51,8 +52,9 @@ install.packages(c("devtools", ggplot2", "knitr","testthat","e1071", "graphics",
 
 Bioconductor packages:
 ```{r}
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("AnnotationDbi", "org.Hs.eg.db", "org.Mm.eg.db", "topGO", "BiocStyle"))
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install(c("AnnotationDbi", "org.Hs.eg.db", "org.Mm.eg.db", "topGO", "BiocStyle"))
 ```
 
 Some packages might need other dependencies to be intalled in addition. If this is the case (displayed by an error message within R) use the same command to install the dependent packages.
