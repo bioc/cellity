@@ -98,8 +98,9 @@ The function `extract_features` supports only human and mouse data at the moment
 if (requireNamespace("org.Hs.eg.db", quietly = TRUE)) {
   #MAKE SURE YOU HAVE THE APPROPRIATE ORGANISM INSTALLED 
   #You would instsall the library below by: 
-  #source("https://bioconductor.org/biocLite.R")
-  #biocLite("org.Hs.eg.db")
+  #if (!requireNamespace("BiocManager", quietly=TRUE))
+      #install.packages("BiocManager")
+  #BiocManager::install("org.Hs.eg.db")
   library(org.Hs.eg.db)
   data("extra_human_genes")
   data("feature_info")
